@@ -1,0 +1,397 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+body {
+  margin: 0px;
+  font-family: var(--bodyFontStyle);
+}
+:root {
+  --primary: #0f4b89;
+  --secondry: #ffffff;
+  --down: #f6f4f7;
+  --tertiary: #000000;
+  --quaternary : #fefefe;
+  --overColor: #00000080;
+  --icmFontStyle: "Quicksand", sans-serif;
+  --serviceFontStyle: Verdana, Geneva, Tahoma, sans-serif;
+  --arrowColor: #6197dd;
+  --arrowBackground: #f1f3fb;
+  --gradionColor: #8a9299a6, #080707a6;
+  --copyRightColor: #1b77da;
+  --googleColor: #ff0000;
+  --bodyFontStyle: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.listItems:hover{
+  background-color: var(--primary);
+  color: var(--secondry);
+}
+.menuIcon {
+  display: none;
+}
+
+.download {
+  background-color: var(--down);
+  height: 50px;
+  width: 100%;
+  text-align: end;
+}
+.downloadimg {
+  display: inline-block;
+}
+nav {
+  height: 48px;
+  position: sticky;
+  top: 0%;
+  left: 0%;
+  background-color: var(--quaternary );
+  z-index: 2;
+  box-shadow: 0px 1px 1px var(--tertiary);
+}
+
+.logo {
+  float: left;
+  margin-left: 10px;
+  margin-top: 4px;
+}
+.navText {
+  list-style: none;
+  float: right;
+
+  
+}
+.listItems {
+  display: inline;
+  margin-right: 20px;
+  padding: 15px;
+  text-decoration: none;
+  color: var(--tertiary);
+}
+.listText {
+  text-decoration: none;
+  color: var(--tertiary);
+}
+.homeBackground {
+  background-image: url("assets/banner3.jpg");
+  height: 400px;
+  width: 100%;
+}
+.overlay {
+  position: absolute;
+  height: 400px;
+  background: var(--overColor);
+}
+.backgroundText {
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  color: var(--quaternary );
+  margin: auto;
+  font-size: 30px;
+  font-family: var(--icmFontStyle);
+  word-wrap: break-word;
+  margin-top: 180px;
+  margin-bottom: 20px;
+}
+.font {
+  font-weight: bolder;
+}
+.aboutHeader {
+  display: flex;
+  margin-top: 80px;
+}
+.aboutText {
+  margin: auto;
+  font-size: 30px;
+}
+.aboutText1 {
+  font-weight: bolder;
+}
+.introIcm {
+  margin-top: 30px;
+  display: flex;
+}
+.introIcmText {
+  font-family: var(--icmFontStyle);
+  width: 85%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.Services {
+  background-color: var(--down);
+  font-family: var(--serviceFontStyle);
+  padding-bottom: 20px;
+}
+.servicesHeading {
+  display: flex;
+  font-size: 30px;
+  justify-content: center;
+  padding: 20px;
+}
+.servicesHead {
+  font-weight: bolder;
+  margin-right: 5px;
+}
+.serviceBox {
+  display: grid;
+  grid-template-columns:repeat(3,30%);
+  justify-content: center;
+  gap: 2%;
+   margin-bottom: 20px; 
+ 
+}
+.gridIcon {
+  display: grid;
+  grid-template-columns: 70px 80%;
+}
+.serviceIcon {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  height: 38px;
+  background-color: var(--primary);
+  align-items: center;
+}
+.text {
+  padding: 13px;
+  background-color: var(--quaternary );
+}
+
+.iconSize {
+  font-size: 30px;
+  color: var(--secondry);
+}
+.glassText {
+  font-size: 20px;
+  color: var(--secondry);
+}
+.glassIcon {
+  font-size: 16px;
+  color: var(--secondry);
+  
+}
+
+.skillText {
+  display: grid;
+  grid-template-columns: repeat(2,45%);
+  gap: 10%;
+}
+.skillHeading {
+  font-size: 30px;
+  text-align: center;
+}
+.bolder {
+  font-weight: bolder;
+}
+.skillbar {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.develo {
+  width: 90%;
+  background-color: var(--primary);
+  height: 15px;
+}
+.Web {
+  width: 80%;
+  background-color: var(--primary);
+  height: 15px;
+}
+.apps {
+  width: 65%;
+  background-color: var(--primary);
+  height: 15px;
+}
+.system {
+  width: 60%;
+  background-color: var(--primary);
+  height: 15px;
+}
+
+.clientText {
+  padding: 10px;
+}
+.clientIcon {
+  display: flex;
+  justify-content: end;
+  margin-right: 30px;
+}
+.arrow {
+  color: var(--arrowColor);
+  background-color: var(--arrowBackground);
+  padding: 5px;
+  margin-left: 5px;
+}
+.feature {
+  background-image: url("assets/Employee-flight-risk-1.jpg");
+  background-size: cover;
+}
+.featurelay {
+  background: linear-gradient(var(--gradionColor));
+}
+.featureHeading {
+  font-size: 30px;
+  color: var(--secondry);
+  text-align: center;
+  padding: 15px;
+}
+
+.bold {
+  font-weight: bolder;
+}
+.featureBox {
+  display: grid;
+  grid-template-columns: repeat(2,45%);
+  justify-content: center;
+  gap: 5%;
+}
+.cloudbox {
+  padding: 10px;
+  background-color: var(--secondry);
+  margin: auto;
+  margin-bottom: 40px;
+}
+.servicebox {
+  padding: 10px;
+  background-color: var(--secondry);
+  margin: auto;
+  margin-bottom: 40px;
+}
+.clientTitle {
+  font-size: 28px;
+  margin-top: 0;
+}
+.clientImage {
+  height: 220px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.customerImage {
+  height: 120px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.image {
+  height: 80px;
+  width: 12%;
+  object-fit: contain;
+}
+.image-center {
+  height: 80px;
+  width: 8%;
+  object-fit: contain;
+}
+
+.contact {
+  margin-top: 30px;
+  background-image: url("assets/sea-1265064_960_720.jpg");
+  background-size: cover;
+}
+.contactoverlay {
+  background: var(--overColor);
+}
+.contactHeading {
+  font-size: 25px;
+  color: var(--secondry);
+  padding: 20px;
+  text-align: center;
+}
+.contactText {
+  font-weight: bolder;
+}
+.contactIcon {
+  text-decoration: none;
+  color: var(--secondry);
+}
+.information {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2,45%);
+  gap: 5%;
+}
+.address {
+  display: grid;
+  grid-template-columns: 8% 70%;
+  
+}
+.addressIcon {
+  color: var(--secondry);
+  text-decoration: none;
+  display: inline;
+}
+.inputType {
+  display: grid;
+  grid-template-columns: repeat(2,40%);
+  gap: 20%;
+}
+.userInput {
+  width: 100%;
+  color: var(--secondry);
+}
+.inputText {
+  width: 100%;
+}
+
+.lable,
+.email {
+  color: var(--secondry);
+}
+
+.messageBox {
+  margin-top: 15px;
+}
+.comment {
+  width: 100%;
+  height: 150px;
+}
+.sendButton {
+  width: 102%;
+  display: flex;
+  justify-content: end;
+  margin: 20px 0px 20px 0px;
+}
+.messageButton {
+  padding: 10px;
+}
+.copyRights {
+  display: grid;
+  grid-template-columns: repeat(2,50%);
+  height: 70px;
+  width: 100%;
+  background-color: var(--copyRightColor);
+  align-items: center;
+}
+.copyRightsText {
+  color: var(--secondry);
+  margin-left: 10px;
+}
+.social {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4,20%);
+  justify-content: end;
+}
+.socialMedia {
+  margin-left: 30px;
+  background-color: var(--secondry);
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.facebook,
+.linlkedin,
+.twitter {
+  color: var(--primary);
+}
+.google {
+  color: var(--googleColor);
+}
+.dropdown{
+  display: none;
+}
